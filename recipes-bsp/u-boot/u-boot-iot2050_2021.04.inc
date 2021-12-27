@@ -1,8 +1,9 @@
 #
-# Copyright (c) Siemens AG, 2020-2021
+# Copyright (c) Siemens AG, 2020-2022
 #
 # Authors:
 #  Jan Kiszka <jan.kiszka@siemens.com>
+#  Su Baocheng <baocheng.su@siemens.com>
 #
 # This file is subject to the terms and conditions of the MIT License.  See
 # COPYING.MIT file in the top-level directory.
@@ -10,6 +11,7 @@
 
 require u-boot-iot2050.inc
 
+PV = "2021.04"
 SRC_URI += " \
     https://ftp.denx.de/pub/u-boot/u-boot-${PV}.tar.bz2 \
     file://0001-arm-mach-k3-am6_init-Prioritize-MSMC-traffic-over-DD.patch \
