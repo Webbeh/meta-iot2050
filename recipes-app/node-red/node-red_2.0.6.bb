@@ -17,7 +17,7 @@ PRESERVE_PERMS = "usr/lib/node_modules/node-red/red.js"
 
 SRC_URI += " \
     file://node-red.service \
-    file://0001-Enable-Projects.patch"
+    file://0001-Enable-Projects-and-Monaco.patch"
 
 do_install_append() {
     patch -p0 -d/ -u < ${WORKDIR}/0001-Enable-Projects-and-Monaco.patch
