@@ -15,9 +15,12 @@ DESCRIPTION = "A visual tool for wiring the Internet of Things"
 
 PRESERVE_PERMS = "usr/lib/node_modules/node-red/red.js"
 
-SRC_URI += "file://node-red.service"
+SRC_URI += " \
+    file://node-red.service \
+    file://0001-Enable-Projects.patch"
 
 do_install_append() {
+    patch -p0 -d/ -u < ${WORKDIR}/0001-Enable-Projects-and-Monaco.patch
     install -v -d ${D}/lib/systemd/system/
     install -v -m 644 ${WORKDIR}/node-red.service ${D}/lib/systemd/system/
 }

@@ -1,0 +1,12 @@
+--- /root/.node-red/settings.js       2022-01-12 09:41:04.784000000 +0000
++++ /root/.node-red/settings.js     2022-01-12 09:47:10.042833954 +0000
+@@ -337,3 +337,3 @@ module.exports = {
+             /** To enable the Projects feature, set this value to true */
+-            enabled: false,
++            enabled: true,
+             workflow: {
+@@ -352,3 +352,3 @@ module.exports = {
+              */
+-            lib: "ace",
++            lib: "monaco",
+             options: {
